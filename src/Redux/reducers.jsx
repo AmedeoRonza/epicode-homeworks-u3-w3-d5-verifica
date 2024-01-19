@@ -1,4 +1,4 @@
-// reducer.js
+
 import {
     FETCH_DATA_REQUEST,
     FETCH_DATA_SUCCESS,
