@@ -12,7 +12,7 @@ const Sidebar = () => {
       <Nav>
         <ul>
           <li>
-            <Nav.Link href="#">
+            <Nav.Link href="#" className="sidebarLink">
               <i className="bi bi-house-door-fill"></i>&nbsp; Home
             </Nav.Link>
           </li>
@@ -25,7 +25,7 @@ const Sidebar = () => {
         <Button className="login-btn" type="button">
           Login
         </Button>
-        <a href="#">Cookie Policy</a> | <a href="#">Privacy</a>
+        <a href="#" className="cookieLink">Cookie Policy</a> | <a href="#" className="privacyLink">Privacy</a>
       </div>
     </Navbar>
   );

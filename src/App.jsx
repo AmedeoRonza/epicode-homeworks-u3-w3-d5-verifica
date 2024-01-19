@@ -3,6 +3,8 @@ import Sidebar from './components/Sidebar';
 import MusicSection from './components/MusicSection';
 import AlbumCard from './components/AlbumCard';
 import PlayerControls from './components/PlayerControls';
+import Contenuto from './components/Contenuto';
+import Search from './components/Search';
 import { Container, Row, Col } from 'react-bootstrap';
 
 function App() {
@@ -13,19 +15,12 @@ function App() {
           <Sidebar />
         </Col>
         <Col xs={10} className="mainPage">
-          <Row className="mainLinks d-none d-md-flex">
-            <Col xs={9} lg={11}>
-              <a href="#">TRENDING</a>
-              <a href="#">PODCAST</a>
-              <a href="#">MOODS AND GENRES</a>
-              <a href="#">NEW RELEASES</a>
-              <a href="#">DISCOVER</a>
-            </Col>
-          </Row>
           
-          <MusicSection title="Search Results" id="searchResults" />
+          
+          <Search />
+          <Contenuto />
+          
           <MusicSection title="Rock Classics" id="rock">
-            
             <Row id="rockSection">
               <AlbumCard
                 songInfo={{
@@ -35,11 +30,10 @@ function App() {
                   album: { cover_medium: 'example_image_url' },
                 }}
               />
-              
             </Row>
           </MusicSection>
+          
           <MusicSection title="Pop Culture" id="pop">
-            
             <Row id="popSection">
               <AlbumCard
                 songInfo={{
@@ -49,11 +43,10 @@ function App() {
                   album: { cover_medium: 'example_image_url' },
                 }}
               />
-            
             </Row>
           </MusicSection>
+          
           <MusicSection title="#HipHop" id="hiphop">
-            
             <Row id="hipHopSection">
               <AlbumCard
                 songInfo={{
@@ -63,7 +56,6 @@ function App() {
                   album: { cover_medium: 'example_image_url' },
                 }}
               />
-            
             </Row>
           </MusicSection>
          
@@ -77,3 +69,4 @@ function App() {
 }
 
 export default App;
+

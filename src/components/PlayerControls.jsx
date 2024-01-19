@@ -6,8 +6,9 @@ function PlayerControls() {
     <div className="col-6 col-md-4 playerControls">
       <div className="d-flex">
         <a href="#">
-          <img src="assets/playerbuttons/shuffle.png" alt="shuffle" />
+          <img className="playerControlsImg" src="assets/playerbuttons/shuffle.png" alt="shuffle" />
         </a>
+        {/* ... Altri controlli */}
       </div>
       <div className="progress mt-3">
         <div role="progressbar"></div>
@@ -17,3 +18,4 @@ function PlayerControls() {
 }
 
 export default PlayerControls;
+

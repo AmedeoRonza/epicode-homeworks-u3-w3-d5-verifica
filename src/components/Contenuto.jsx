@@ -12,14 +12,6 @@ function Contenuto() {
     dispatch(fetchData());
   }, [dispatch]);
 
-  if (loading) {
-    return <p>Loading...</p>;
-  }
-
-  if (error) {
-    return <p>Error: {error}</p>;
-  }
-
   const renderAlbums = () => {
     return (
       <div className="row row-cols-1 row-cols-sm-2 row-cols-lg-3 row-cols-xl-4 imgLinks py-3">
@@ -36,6 +28,14 @@ function Contenuto() {
       </div>
     );
   };
+
+  if (loading) {
+    return <p>Loading...</p>;
+  }
+
+  if (error) {
+    return <p>Error: {error}</p>;
+  }
 
   return (
     <Row>
