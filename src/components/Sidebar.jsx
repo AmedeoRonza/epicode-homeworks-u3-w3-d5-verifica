@@ -1,5 +1,6 @@
 import React from 'react';
 import { Navbar, Nav, Button } from 'react-bootstrap';
+import "../App.css";
 
 const Sidebar = () => {
   return (
