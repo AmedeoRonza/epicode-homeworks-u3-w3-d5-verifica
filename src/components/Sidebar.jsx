@@ -1,6 +1,6 @@
 import React from 'react';
 import { Navbar, Nav, Button } from 'react-bootstrap';
-import "../App.css";
+import "../Assets/Style.css";
 
 const Sidebar = () => {
   return (

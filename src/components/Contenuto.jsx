@@ -1,8 +1,8 @@
 import React, { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { Row, Col } from 'react-bootstrap';
-import { fetchData } from '../Redux/Redux';
-import "../App.css";
+import { fetchData } from '../Redux/action';
+import "../Assets/Style.css";
 
 function Contenuto() {
   const dispatch = useDispatch();
